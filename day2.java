@@ -13,10 +13,6 @@ public class day2 {
             System.out.println(day + "- третья декада");
         } else {
             System.out.println(m4);
-
-
         }
-
-
     }
 }
