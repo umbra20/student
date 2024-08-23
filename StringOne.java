@@ -1,5 +1,5 @@
 import java.util.Arrays;
-//TODO  Дан массив со строками: String[] stringArray = {"ab", "cd", "ef"}.
+//TODO  Дан массив со строками: String[] stringArray = {"ab", "cd", "ef"}
 Получите массив символов этих строк: char[] charArray =  {'a', 'b', 'c', 'd', 'e', 'f'}.
 public class StringOne {
 
