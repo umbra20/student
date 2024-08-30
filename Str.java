@@ -8,6 +8,6 @@ public class Str {
 
         }
         char [] chars = word.toCharArray();
-        System.out.println(word);
+        System.out.println(Arrays.toString(chars));
     }
 }
