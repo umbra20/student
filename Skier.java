@@ -1,18 +1,8 @@
 package Module_2;
 
-public class Skier extends Sport {
+public class Skier extends Sportsman {
 
-    public Skier(int scoring, int out){
-        super(scoring, out);
-    }
-
-    @Override
-    public void start() {
-        System.out.println("Лыжного старт");
-    }
-
-    @Override
-    public void stop() {
-        System.out.println("Конец старта");
+    public Skier(String name, String team, int age){
+        super(name, team, age);
     }
 }
