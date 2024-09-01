@@ -1,18 +1,14 @@
 package Module_2;
 
-public class HockeyPlayer extends Sport {
+public class HockeyPlayer extends Sportsman {
 
-    public HockeyPlayer(int scoring, int out){
-        super(scoring, out);
+    public HockeyPlayer(String name, String team, int age){
+        super(name, team, age);
     }
 
-    @Override
-    public void start() {
-        System.out.println("Хоккейный матч ");
+    public void HockeyPlayer() {
+        System.out.println("Кол-во шайб за два периода: ");
+
     }
 
-    @Override
-    public void stop() {
-        System.out.println("Конец матча ");
-    }
 }
