@@ -2,26 +2,22 @@ package Module_2;
 
 public class Main {
     public static void main(String[] args) {
-        Footballer footballer = new Footballer(5, 10);
-        footballer.start();
-        System.out.println("I тайм закончился: " + footballer.scoring);
-        System.out.println("II тайм: " + footballer.out);
-        footballer.stop();
+
+        Footballer footballer = new Footballer("Васька", "Dogs", 21);
+        System.out.println("Имя игрока - " +footballer.getName() + " : " + "Название команды - " + footballer.getTeam() + " : " + "Возраст - " + footballer.getAge());
+        footballer.sport();
         System.out.println();
 
-        HockeyPlayer hockeyPlayer = new HockeyPlayer(7, 8);
-        hockeyPlayer.start();
-        System.out.println("I тайм закончился: " + footballer.scoring);
-        System.out.println("II тайм закончился: " + footballer.out);
-        hockeyPlayer.stop();
+        HockeyPlayer hockeyPlayer = new HockeyPlayer("Игорь", "Смерч", 32);
+        System.out.println("Имя игрока - " + hockeyPlayer.getName() + " : " + "Название команды - " + hockeyPlayer.getTeam() + " : " + "Возраст - " + hockeyPlayer.getAge());
+        hockeyPlayer.sport();
         System.out.println();
 
-        Skier skier = new Skier(6, 7);
-        skier.start();
-        System.out.println("Кол-во кругов пройдено: " + footballer.scoring);
-        System.out.println("Осталось пройти: " + footballer.out);
-        skier.stop();
+        Skier skier = new Skier("Михаил", "Муравьи", 29);
+        System.out.println("Имя лыжника - " + skier.getName() + " : " + "Название команды - " + skier.getTeam() + " : " + "Возраст - " + skier.getAge());
+        skier.sport();
+
     }
-
 }
+
 
