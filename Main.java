@@ -1,23 +1,24 @@
-package Module_2;
+package Module_2.Abstraction;
 
 public class Main {
     public static void main(String[] args) {
+        Guitar guitar = new Guitar("Гитара", "Настройка гитары") ;
+        System.out.println(guitar.play);
+        System.out.println(guitar.tune);
+        String guitarPl = guitar.getPlay();
+        String guitarPl1 = guitar.getTune();
+        System.out.println(guitarPl);
+        System.out.println(guitarPl1);
 
-        Footballer footballer = new Footballer("Васька", "Dogs", 21);
-        System.out.println("Имя игрока - " +footballer.getName() + " : " + "Название команды - " + footballer.getTeam() + " : " + "Возраст - " + footballer.getAge());
-        footballer.sport();
-        System.out.println();
 
-        HockeyPlayer hockeyPlayer = new HockeyPlayer("Игорь", "Смерч", 32);
-        System.out.println("Имя игрока - " + hockeyPlayer.getName() + " : " + "Название команды - " + hockeyPlayer.getTeam() + " : " + "Возраст - " + hockeyPlayer.getAge());
-        hockeyPlayer.sport();
-        System.out.println();
-
-        Skier skier = new Skier("Михаил", "Муравьи", 29);
-        System.out.println("Имя лыжника - " + skier.getName() + " : " + "Название команды - " + skier.getTeam() + " : " + "Возраст - " + skier.getAge());
-        skier.sport();
+        System.out.println("_____________________");
+        Piano piano = new Piano("Пианино", "Настройка пианино") ;
+        System.out.println(piano.play);
+        System.out.println(piano.tune);
+        String pianoPl = piano.getPlay();
+        String pianoPl1 = piano.getTune();
+        System.out.println(pianoPl);
+        System.out.println(pianoPl1);
 
     }
 }
-
-
